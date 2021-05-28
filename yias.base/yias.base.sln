@@ -7,7 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.base", "yias.base\yias
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.service", "..\yias.service\yias.service.csproj", "{3B7BAB54-928B-4019-8E0D-77D1FA661171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.mangeui", "..\yias.mangeui\yias.mangeui.csproj", "{D68BF14F-AA3A-46AA-9FBC-C3CBE8F1AC30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.api", "..\yias.mangeui\yias.api.csproj", "{D68BF14F-AA3A-46AA-9FBC-C3CBE8F1AC30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.页面", "1.页面", "{881E3171-4C84-4037-87C7-F7DE29B3F7AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.服务", "2.服务", "{39C3B568-2966-4EAD-9B57-ADE6FCB48D81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.基础", "3.基础", "{DA129887-1962-404B-BEEA-803C9A132E38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EDD5A3B-9B1A-4BCA-968C-832631B1A48B} = {DA129887-1962-404B-BEEA-803C9A132E38}
+		{3B7BAB54-928B-4019-8E0D-77D1FA661171} = {39C3B568-2966-4EAD-9B57-ADE6FCB48D81}
+		{D68BF14F-AA3A-46AA-9FBC-C3CBE8F1AC30} = {881E3171-4C84-4037-87C7-F7DE29B3F7AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E76061E9-B0D7-4EE0-82A4-18B4389FAAB8}
