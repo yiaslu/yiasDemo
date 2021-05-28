@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1500
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.service", "yias.service\yias.service.csproj", "{3B7BAB54-928B-4019-8E0D-77D1FA661171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.service", "yias.service\yias.service.csproj", "{3B7BAB54-928B-4019-8E0D-77D1FA661171}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.页面", "1.页面", "{881E3171-4C84-4037-87C7-F7DE29B3F7AF}"
 EndProject
@@ -34,6 +34,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "yias.manageui", "yias.manag
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "55551"
 		SlnRelativePath = "yias.manageui\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "引用DLL", "引用DLL", "{046C5FE4-C237-4B95-BCE8-E50DFD909CEF}"
+	ProjectSection(SolutionItems) = preProject
+		yias.dll\Newtonsoft.Json.dll = yias.dll\Newtonsoft.Json.dll
 	EndProjectSection
 EndProject
 Global

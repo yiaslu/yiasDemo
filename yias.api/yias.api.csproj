@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\yias.base\yias.base.csproj" />
+    <ProjectReference Include="..\yias.service\yias.service.csproj" />
+  </ItemGroup>
+
 </Project>

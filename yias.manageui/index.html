@@ -3,8 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="yiasfile/js/impjs.js"></script>
+
+    <script type="text/javascript">
+        ImputScript();
+    </script>
 </head>
 <body>
-
+    <button onclick="test()">test</button>
+    <script type="text/javascript">
+        function test() {
+            yias.ajax.add("vID", 6);
+            yias.ajax.send("yias.service", "testservice", "Get", function (ret) {
+                alert(ret);
+            });
+        }
+    </script>
 </body>
 </html>
