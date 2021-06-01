@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.服务", "2.服务", "{39
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.基础", "3.基础", "{DA129887-1962-404B-BEEA-803C9A132E38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.baseclass", "yias.base\yias.baseclass.csproj", "{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.api", "yias.api\yias.api.csproj", "{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "yias.manageui", "yias.manageui\", "{F8CCE9BF-ECAF-48AA-B08B-132E99737F86}"
@@ -41,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "引用DLL", "引用DLL", "{
 		yias.dll\Newtonsoft.Json.dll = yias.dll\Newtonsoft.Json.dll
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.baseclass", "yias.baseclass\yias.baseclass.csproj", "{42CC2F0C-03A4-47EC-9C01-B2A86343679C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,10 +51,6 @@ Global
 		{3B7BAB54-928B-4019-8E0D-77D1FA661171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B7BAB54-928B-4019-8E0D-77D1FA661171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B7BAB54-928B-4019-8E0D-77D1FA661171}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}.Release|Any CPU.Build.0 = Release|Any CPU
 		{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,15 +59,19 @@ Global
 		{F8CCE9BF-ECAF-48AA-B08B-132E99737F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8CCE9BF-ECAF-48AA-B08B-132E99737F86}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8CCE9BF-ECAF-48AA-B08B-132E99737F86}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3B7BAB54-928B-4019-8E0D-77D1FA661171} = {39C3B568-2966-4EAD-9B57-ADE6FCB48D81}
-		{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658} = {DA129887-1962-404B-BEEA-803C9A132E38}
 		{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9} = {881E3171-4C84-4037-87C7-F7DE29B3F7AF}
 		{F8CCE9BF-ECAF-48AA-B08B-132E99737F86} = {881E3171-4C84-4037-87C7-F7DE29B3F7AF}
+		{42CC2F0C-03A4-47EC-9C01-B2A86343679C} = {DA129887-1962-404B-BEEA-803C9A132E38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E76061E9-B0D7-4EE0-82A4-18B4389FAAB8}
