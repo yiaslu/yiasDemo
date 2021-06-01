@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.服务", "2.服务", "{39
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.基础", "3.基础", "{DA129887-1962-404B-BEEA-803C9A132E38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.base", "yias.base\yias.base.csproj", "{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.baseclass", "yias.base\yias.baseclass.csproj", "{0BC1DA14-AB92-4BEE-AA03-B52F9A72E658}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.api", "yias.api\yias.api.csproj", "{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9}"
 EndProject

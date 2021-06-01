@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../../plugins/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="../../plugins/jqgrid/css/css/flick/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link href="../../plugins/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" />
+    <link href="../../css/pagecss.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../plugins/jqgrid/js/jquery.jqGrid.src.js"></script>
+    <script src="../../plugins/My97DatePicker/WdatePicker.js"></script>
+    <script src="../../js/yias.js"></script>
+
+
+</head>
+<body cellspacing="0" cellpadding="0" border="0">
+
+    <div class="rightfrm">
+        <table class="ui-jqgrid-htable" cellspacing="0" cellpadding="0" border="0">
+            <thead>
+                <tr>
+                    <th class="ui-state-default" style="height:28px;font-size:12px;width:200px;border:0;border-bottom:1px solid rgb(221, 221, 221);text-align:left;">
+                        <table><tr><td style="width:100%;">表单</td><td><a href="#" onclick="closefrm();" class="rightclose" style="">×</a></td></tr></table>
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="btntd">
+                    <button type="button" class="btn btn-primary">保 存</button>
+                    <button type="button" class="btn btn-danger" onclick="closefrm()">关 闭</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;height:100%;">
+                    <form class="form" style="overflow-y: scroll; height: 100%;">
+                        <div class="form-item">
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">文本框</label>
+                                <div class="input-inline">
+                                    <input type="text" name="username" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">用户性别</label>
+                                <div class="input-inline">
+                                    <input type="radio" name="sex" /> 男
+                                    <input type="radio" name="sex" /> 女
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">用户城市</label>
+                                <div class="input-inline">
+                                    <input type="text" name="city" class="input">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">日期</label>
+                                <div class="input-inline">
+                                    <input type="text" class="input" onclick="WdatePicker()">
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">SELECT</label>
+                                <div class="input-inline">
+                                    <select class="select">
+                                        <option value="value">text</option>
+                                        <option value="value">text1</option>
+                                        <option value="value">text2</option>
+                                        <option value="value">text3</option>
+                                        <option value="value">text4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inline">
+                                <label class="form-label">Check</label>
+                                <div class="input-inline">
+                                    <input type="checkbox" name="check" /> 1
+                                    <input type="checkbox" name="check1" /> 2
+                                    <input type="checkbox" name="check2" /> 2
+                                    <input type="checkbox" name="check3" /> 2
+                                    <input type="checkbox" name="check4" /> 2
+                                    <input type="checkbox" name="check5" /> 2
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table style="width: 100%;height: 690px;">
+        <tr>
+            <td colspan="2" class="btntd">
+                <div class="form-item">
+                    <div class="inline">
+                        <label class="form-label">DATA</label>
+                        <div class="input-inline">
+                            <input type="text" class="input" onclick="WdatePicker()">
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <label class="form-label">DATA2</label>
+                        <div class="input-inline">
+                            <input type="text" class="input" onclick="WdatePicker()">
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <label class="form-label">DATA3</label>
+                        <div class="input-inline">
+                            <input type="text" class="input" onclick="WdatePicker()">
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <button type="button" class="btn btn-primary">搜 索</button>
+                        <button type="button" class="btn btn-primary" onclick="showother();">更多。。</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="othselect" style="width: 200px;height: 100%; vertical-align:top;display:none;">
+                <table class="ui-jqgrid-htable" cellspacing="0" cellpadding="0" border="0" style="width:100%;height:100%; border:1px solid rgb(221, 221, 221);">
+                    <thead>
+                        <tr>
+                            <th class="ui-state-default" style="height:28px;font-size:12px;width:200px;border:0;border-bottom:1px solid rgb(221, 221, 221);">
+                                搜索信息
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="btntd">
+                            <button type="button" class="btn btn-primary">搜 索</button>
+                            <button type="button" class="btn btn-danger" onclick="closeother()">关 闭</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;height:100%;">
+                            <form class="form">
+                                <div class="form-item">
+                                    <div class="inline">
+                                        <label class="form-label">DATA</label>
+                                        <div class="input-inline">
+                                            <input type="text" class="input" onclick="WdatePicker()">
+                                        </div>
+                                    </div>
+                                    <div class="inline">
+                                        <label class="form-label">DATA</label>
+                                        <div class="input-inline">
+                                            <input type="text" class="input" onclick="WdatePicker()">
+                                        </div>
+                                    </div>
+                                    <div class="inline">
+                                        <label class="form-label">DATA</label>
+                                        <div class="input-inline">
+                                            <input type="text" class="input" onclick="WdatePicker()">
+                                        </div>
+                                    </div>
+                                    <div class="inline">
+                                        <label class="form-label">DATA</label>
+                                        <div class="input-inline">
+                                            <input type="text" class="input" onclick="WdatePicker()">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="vertical-align: top;width:100%;">
+                <table id="list2"></table>
+                <div id="pager2"></div>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+
+
+        var jsonstr = "[{id:'1',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'2',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'3',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'4',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'5',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'6',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'7',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'8',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'9',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'10',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'11',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'12',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'13',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'14',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'15',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'16',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'17',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'18',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'10',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'11',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'12',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'13',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'14',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'15',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'16',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'17',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'18',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'10',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'11',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'12',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'13',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'14',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'15',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'16',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'17',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'18',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}," +
+            "{id:'25',invdate:'XXXX',name:'name',amount:'xx',tax:'xxx11',total:'3323',note:'543'}]";
+
+        $(function () {
+            jQuery("#list2").jqGrid(
+                {
+                    datatype: "local",//请求数据返回的类型。可选json,xml,txt
+                    colNames: ['ID', 'Date', 'Client', 'Amount', 'Tax', 'Total', 'Notes'],//jqGrid的列显示名字
+                    colModel: [ //jqGrid每一列的配置信息。包括名字，索引，宽度,对齐方式.....
+                        { name: 'id', index: 'id' },
+                        { name: 'invdate', index: 'invdate' },
+                        { name: 'name', index: 'name' },
+                        { name: 'amount', index: 'amount', align: "right" },
+                        { name: 'tax', index: 'tax', align: "right" },
+                        { name: 'total', index: 'total', align: "right" },
+                        { name: 'note', index: 'note' }
+                    ],
+                    rowNum: 0,//一页显示多少条
+                    rowList: [10, 20, 50, 100, 300, 500],//可供用户选择一页显示多少条
+                    rownumbers: true,
+                    cellsubmit: "clientArray",
+                    pgbuttons: false,
+                    pginput: true,
+                    rowList: true,
+                    autowidth: true,
+                    height: '600px',
+                    ondblClickRow: dbcrow,
+                    pager: '#pager2',//表格页脚的占位符(一般是div)的id
+                });
+            jQuery("#list2")[0].addJSONData(eval(jsonstr));
+            $("#list2").on("click", function () { $(".rightfrm").hide(); });
+            $(".rightfrm").hide();
+            $("#othselect").hide();
+        })
+
+        function dbcrow() {
+            var rowid = $('#list2').jqGrid('getGridParam', 'selrow');
+            if (rowid == null) {
+                alert('请选择行！');
+                return;
+            }
+            $(".rightfrm").show();
+        }
+        function showother() {
+            $("#othselect").show();
+        }
+        function closeother() {
+            $("#othselect").hide();
+        }
+        function closefrm() {
+            $(".rightfrm").hide();
+        }
+    </script>
+</body>
+</html>

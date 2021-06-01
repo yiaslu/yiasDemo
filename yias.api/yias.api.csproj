@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\yias.base\yias.base.csproj" />
+    <ProjectReference Include="..\yias.base\yias.baseclass.csproj" />
     <ProjectReference Include="..\yias.service\yias.service.csproj" />
   </ItemGroup>
 
