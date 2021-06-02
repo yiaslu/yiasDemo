@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "引用DLL", "引用DLL", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yias.baseclass", "yias.baseclass\yias.baseclass.csproj", "{42CC2F0C-03A4-47EC-9C01-B2A86343679C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yias.datasource", "yias.datasource\yias.datasource.csproj", "{68F66ED4-B54D-46CF-8DC9-3E2C94521A22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42CC2F0C-03A4-47EC-9C01-B2A86343679C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F66ED4-B54D-46CF-8DC9-3E2C94521A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F66ED4-B54D-46CF-8DC9-3E2C94521A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F66ED4-B54D-46CF-8DC9-3E2C94521A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F66ED4-B54D-46CF-8DC9-3E2C94521A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{64FE73ED-54C8-4150-82E8-E7D6B70AA4A9} = {881E3171-4C84-4037-87C7-F7DE29B3F7AF}
 		{F8CCE9BF-ECAF-48AA-B08B-132E99737F86} = {881E3171-4C84-4037-87C7-F7DE29B3F7AF}
 		{42CC2F0C-03A4-47EC-9C01-B2A86343679C} = {DA129887-1962-404B-BEEA-803C9A132E38}
+		{68F66ED4-B54D-46CF-8DC9-3E2C94521A22} = {DA129887-1962-404B-BEEA-803C9A132E38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E76061E9-B0D7-4EE0-82A4-18B4389FAAB8}
