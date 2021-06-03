@@ -1,16 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace yias.service
 {
+
+    public static class staticmodel
+    {
+        static objmodel _datamodel;
+        public static objmodel datasmodel
+        {
+            get
+            {
+                if (_datamodel == null)
+                    _datamodel = new objmodel();
+                return _datamodel;
+            }
+            set { _datamodel = value; }
+        }
+    }
+
     /// <summary>
     /// 自定义模型
     /// </summary>
     public class objmodel
     {
+        /// <summary>
+        /// 基础模型
+        /// </summary>
         public objmodel() { }
+        /// <summary>
+        /// 模型储值器
+        /// </summary>
         Dictionary<string, object> strValue = new Dictionary<string, object>();
+        /// <summary>
+        /// 扩展 this[] 方法
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public object this[string key]
         {
             get
@@ -31,6 +59,9 @@ namespace yias.service
                 }
             }
         }
+        /// <summary>
+        ///  模型属性信息
+        /// </summary>
         public modelseting modelset
         {
             get { return (modelseting)this["objmodel_modelseting"]; }
@@ -47,6 +78,11 @@ namespace yias.service
         {
             get { return this["modelseting_objname"].ToString(); }
             set { this["modelseting_objname"] = value; }
+        }
+        public string dbname
+        {
+            get { return this["modelseting_dbname"].ToString(); }
+            set { this["modelseting_dbname"] = value; }
         }
         public List<modelattr> modelattrs
         {
@@ -131,6 +167,48 @@ namespace yias.service
         {
             get { return this["wheremodel_values"] + ""; }
             set { this["wheremodel_values"] = value; }
+        }
+    }
+    public class dsourcemodel : objmodel
+    {
+        /// <summary>
+        /// 数据源名称 最好字母形式
+        /// </summary>
+        public string dbsname
+        {
+            get { return this["dsourcemodel_values"] + ""; }
+            set { this["dsourcemodel_values"] = value; }
+        }
+        /// <summary>
+        /// 数据源描述
+        /// </summary>
+        public string dbdes
+        {
+            get { return this["dsourcemodel_dbdes"] + ""; }
+            set { this["dsourcemodel_dbdes"] = value; }
+        }
+        /// <summary>
+        /// 数据源 地址串
+        /// </summary>
+        public string dbconstr
+        {
+            get { return this["dsourcemodel_dbconstr"] + ""; }
+            set { this["dsourcemodel_dbconstr"] = value; }
+        }
+        public DbType dbtype
+        {
+            get { return (DbType)this["dsourcemodel_dbtype"]; }
+            set { this["dsourcemodel_dbtype"] = value; }
+        }
+        public string user
+        {
+            get { return this["dsourcemodel_user"] + ""; }
+            set { this["dsourcemodel_user"] = value; }
+        }
+        public string pwd
+        {
+            get { return this["dsourcemodel_pwd"] + ""; }
+            set { this["dsourcemodel_pwd"] = value; }
         }
     }
 }
