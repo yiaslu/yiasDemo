@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace yias.datasource
+namespace yias
 {
     public interface idataex
     {
@@ -11,5 +11,9 @@ namespace yias.datasource
         void BeginTransaction();
         void Commit();
         void Rollback();
+        bool Add(objmodel obj);
+        bool Updata(objmodel obj);
+        bool Delete(objmodel obj);
+        List<objmodel> GetObjmodels(DbhelpNeed need, objmodel obj);
     }
 }

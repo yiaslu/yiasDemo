@@ -6,6 +6,7 @@ namespace yias.datasource
 {
     public class data_mysql : idataex
     {
+
         public void BeginTransaction()
         {
         }
@@ -17,7 +18,6 @@ namespace yias.datasource
         public void Commit()
         {
         }
-
         public void Open()
         {
         }
@@ -25,5 +25,25 @@ namespace yias.datasource
         public void Rollback()
         {
         }
+
+        public bool Add(objmodel obj)
+        {
+            return false;
+        }
+        public bool Updata(objmodel obj)
+        {
+            return false;
+        }
+        public bool Delete(objmodel obj)
+        {
+            return false;
+        }
+
+        public List<objmodel> GetObjmodels(DbhelpNeed need, objmodel obj)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

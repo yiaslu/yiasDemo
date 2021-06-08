@@ -6,9 +6,6 @@ namespace yias.service
 {
     public class baseservice
     {
-        public void Add(objmodel objm) { }
-
-        public void Update(objmodel objm) { }
 
     }
 }

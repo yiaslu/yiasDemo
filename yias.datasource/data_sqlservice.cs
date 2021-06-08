@@ -6,6 +6,14 @@ namespace yias.datasource
 {
     public class data_sqlservice : idataex
     {
+        public void Open()
+        {
+        }
+
+        public void Rollback()
+        {
+        }
+
         public void BeginTransaction()
         {
         }
@@ -18,12 +26,24 @@ namespace yias.datasource
         {
         }
 
-        public void Open()
+        public bool Add(objmodel obj)
         {
+            return false;
         }
 
-        public void Rollback()
+        public bool Delete(objmodel obj)
         {
+            return false;
+        }
+
+        public List<objmodel> GetObjmodels(DbhelpNeed need, objmodel obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Updata(objmodel obj)
+        {
+            return false;
         }
     }
 }
